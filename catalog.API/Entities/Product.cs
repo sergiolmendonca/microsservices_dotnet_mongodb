@@ -13,6 +13,7 @@ namespace catalog.API.Entities
         [BsonRepresentation(BsonType.ObjectId)]
         public required string Id { get; set; }
 
+        //Essa notation é pra caso o nome na entidade e no banco fossem diferentes
         [BsonElement("Name")]
         public string Name { get; set; }
         public string Category { get; set; }
