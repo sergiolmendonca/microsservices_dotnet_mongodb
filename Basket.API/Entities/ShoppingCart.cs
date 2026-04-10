@@ -5,18 +5,18 @@ using System.Threading.Tasks;
 
 namespace Basket.API.Entities
 {
-    public class ShoppingCar
+    public class ShoppingCart
     {
    
-        public string? UserName { get; set;}
-        public List<ShoppingCarItem> Items { get; set;} = new List<ShoppingCarItem>();
+        public string UserName { get; set;}
+        public List<ShoppingCartItem> Items { get; set;} = new List<ShoppingCartItem>();
         
-        public ShoppingCar()
+        public ShoppingCart()
         {
-            
+            this.UserName = "";
         }
 
-        public ShoppingCar(string userName) 
+        public ShoppingCart(string userName) 
         {
             this.UserName = userName;
         }
